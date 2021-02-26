@@ -13,9 +13,9 @@ labelsArrays = ["background", "aeroplane", "bicycle", "bird", "boat", "bottle", 
 For model inference, we need to load, resize, normalize the image.<br>
 In my case for convenience used pillow library to load and just applied /255 for all values. <br>
 Then if you follow the correct instruction provided by Google in <a href="https://www.tensorflow.org/lite/guide/inference#load_and_run_a_model_in_python">load_and_run_a_model_in_python</a>, you would get output in below shape<br>
-<img src="https://user-images.githubusercontent.com/30307587/109275995-d0c5a100-7858-11eb-99a9-d370cb38f068.png" width=300px/>
+<img src="https://user-images.githubusercontent.com/30307587/109275995-d0c5a100-7858-11eb-99a9-d370cb38f068.png" width=300px/><br>
 Now we need to process this output to a mask like this to segment the class we want.<br>
-<img src="https://user-images.githubusercontent.com/30307587/109276397-4e89ac80-7859-11eb-837e-c3258edf0a97.png"/>
+<img src="https://user-images.githubusercontent.com/30307587/109276397-4e89ac80-7859-11eb-837e-c3258edf0a97.png"/><br>
 For this process we need to compare the values in the output<br>
 ```python
 mSegmentBits = np.zeros((257,257)).astype(int)
