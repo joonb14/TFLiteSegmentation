@@ -1,4 +1,4 @@
-# TFLite-Segmentation-Python
+# TFLite Segmentation Python
 This code snipset is heavily based on <b><a href="https://www.tensorflow.org/lite/examples/segmentation/overview">TensorFlow Lite Segmentation</a></b><br>
 The segmentation model can be downloaded from above link.<br>
 For the mask generation I looked into the <a href="https://github.com/tensorflow/examples/tree/master/lite/examples/image_segmentation/android">Android Segmentation Example</a><br>
